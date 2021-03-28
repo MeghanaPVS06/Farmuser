@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <title>FARMUSER</title>
+</head>
+
+<body
+    style="background-image: linear-gradient(to top,rgba(255, 255, 255, 0.747),rgb(127, 194, 65),rgba(255, 255, 255, 0.747));">
+
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
+                    stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
+                    viewBox="0 0 24 24">
+                    <i class="fa fa-tachometer" aria-hidden="true"></i>
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </svg> -->
+                <img src="C:/Users/KIIT/Desktop/3rd year docs/6-Minor Project/FARMUSER_LOGO-1.png" height="45px" width="45px" style="border-radius:50%;">
+                <span class="ml-3 text-xl">FARMUSER</span>
+            </a>
+            <nav
+                class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                <a href="index.html" class="mr-5 hover:text-gray-900">Home</a>
+                <a href=Consumer-Portal.html class="mr-5 hover:text-gray-900">Customer Portal</a>
+                <a class="mr-5 hover:text-gray-900">Farmer Portal</a>
+                <a href=ContactUs.html s="mr-5 hover:text-gray-900">Contact Us </a>
+            </nav>
+            <section class="text-gray-600 body-font relative">
+                <div class="container px-5 py-24 mx-auto">
+                    <div class="flex flex-col text-center w-full mb-12">
+                        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp FARMER ACCESS</h1>
+                        <hr><br>
+                        <p style="text-align:left" class="lg:w-2/3 mx-auto leading-relaxed text-base">Hi,{Whatever}.</p>
+                    </div>
+                    <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                        <div class="flex flex-wrap -m-2">
+                            <div class="p-2 w-1/2">
+                                <div class="relative">
+                                    <label for="name" class="leading-7 text-sm text-gray-600">City/Town</label>
+                                    <input type="text" id="City" name="City"
+                                        class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                </div>
+                            </div>
+
+                            <div class="p-2 w-1/2">
+                                <div class="relative">
+                                    <label for="pincode" style="margin-left: 5rem;"
+                                        class="leading-7 text-sm text-gray-600">Pincode</label>
+                                    <input type="postal" id="Pincode" name="Pincode" style="margin-left: 5rem;"
+                                        class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-green-500 focus:bg-white focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                                </div>
+                            </div>
+                            <div class="p-2 w-full">
+                            </div>
+                            <div class="relative mb-4">
+                                <label for="Vegetable" style="margin-left: 7rem;"
+                                    class="leading-7 text-sm text-gray-600">&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</label>
+
+                                
+                                </div>
+                        </div>
+
+                    </div>
+                    <div style="margin-left: 200px;" class="lg:w-2/3 w-full mx-auto overflow-auto">
+                        <table class="table-auto w-full text-left whitespace-no-wrap " >
+                            <thead >
+                                <tr>
+                                    <th 
+                                        class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100 rounded-tl rounded-bl">
+                                        Category</th>
+                                    <th
+                                        class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                                        Availablity(in kg)</th>
+                                    <th
+                                        class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                                        Price(per kg)</th>
+                                    <th
+                                        class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                                        Locality Name</th>
+                                    <th
+                                        class="px-4 py-3 title-font tracking-wider font-medium text-gray-900 text-sm bg-gray-100">
+                                        Mode of Payment</th>
+    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="px-4 py-3"><select id="Vegetable" name="Vegetable" style="width: 95px"
+                                            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    
+                                            <option value="Null">Veggie</option>
+                                            <option value="Tomato">Tomato</option>
+                                            <option value="Potato">Potato</option>
+                                            <option value="Onion">Onion</option>
+                                            <option value="Bittergourd">Bittergourd</option>
+                                            <option value="Bottle gourd">Bottle gourd</option>
+                                            <option value="Carrot">Carrot</option>
+                                            <option value="Chilli">Chilli</option>
+                                            <option value="Coriander">Coriander</option>
+                                            <option value="Lemon">Lemon</option>
+                                            <option value="Brinjal">Brinjal</option>
+                                            <option value="Lady Finder">Lady Finder</option>
+                                            <option value="Cabbage">Cabbage</option>
+                                            <option value="Cauliflower">Cauliflower</option>
+                                            <option value="Broccoli">Broccoli</option>
+                                            <option value="Ridge Gourd">Ridge Gourd</option>
+                                            <option value="Pumpkin">Pumpkin</option>
+                                            <option value="Drumstics">Drumstics</option>
+                                            <option value="Cucumber">Cucumber</option>
+                                            <option value="Radish">Radish</option>
+                                            <option value="Beetroot">Beetroot</option>
+                                            <option value="Spinach">Spinach</option>
+                                            <option value="Corn">Corn</option>
+                                            <option value="Spring Onion">Spring Onion</option>
+                                            <option value="Ginger">Ginger</option>
+                                            <option value="Gralic">Gralic</option>
+                                            <option value="Other">Other</option>
+    
+                                        </select></td>
+                                    <td class="px-4 py-3"><input type="text" id="Availablity" name="Availablity" size="1.5">
+                                    </td>
+                                    <td class="px-4 py-3"><input type="text" id="Price" name="Price" size="1.5"></td>
+                                    <td class="px-4 py-3 text-lg text-gray-900"><input type="text" id="Locality"
+                                            name="Locality" size="8"></td>
+                                    <td class="border-t-2 border-gray-200 px-4 py-3"><select id="Payment" name="Payment"
+                                            style="width: 90px;"
+                                            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    
+                                            <option value="Mode">Mode</option>
+                                            <option value="Online">Online</option>
+                                            <option value="Offline">Cash</option>
+                                        </select>
+    
+                                </tr>
+                                <tr>
+                                    <td class="border-t-2 border-gray-200 px-4 py-3"><select id="Vegetable" name="Vegetable"
+                                            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    
+                                            <option value="Null">Veggie</option>
+                                            <option value="Tomato">Tomato</option>
+                                            <option value="Potato">Potato</option>
+                                            <option value="Onion">Onion</option>
+                                            <option value="Bittergourd">Bittergourd</option>
+                                            <option value="Bottle gourd">Bottle gourd</option>
+                                            <option value="Carrot">Carrot</option>
+                                            <option value="Chilli">Chilli</option>
+                                            <option value="Coriander">Coriander</option>
+                                            <option value="Lemon">Lemon</option>
+                                            <option value="Brinjal">Brinjal</option>
+                                            <option value="Lady Finder">Lady Finder</option>
+                                            <option value="Cabbage">Cabbage</option>
+                                            <option value="Cauliflower">Cauliflower</option>
+                                            <option value="Broccoli">Broccoli</option>
+                                            <option value="Ridge Gourd">Ridge Gourd</option>
+                                            <option value="Pumpkin">Pumpkin</option>
+                                            <option value="Drumstics">Drumstics</option>
+                                            <option value="Cucumber">Cucumber</option>
+                                            <option value="Radish">Radish</option>
+                                            <option value="Beetroot">Beetroot</option>
+                                            <option value="Spinach">Spinach</option>
+                                            <option value="Corn">Corn</option>
+                                            <option value="Spring Onion">Spring Onion</option>
+                                            <option value="Ginger">Ginger</option>
+                                            <option value="Gralic">Gralic</option>
+                                            <option value="Other">Other</option>
+    
+                                        </select></td>
+                                    <td class="border-t-2 border-gray-200 px-4 py-3">
+                                        <input type="text" id="Availablity" name="Availablity" size="1.5">
+                                    </td>
+                                    <td class="border-t-2 border-gray-200 px-4 py-3"><input type="text" id="Price"
+                                            name="Price" size="1.5"></td>
+                                    <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900"><input
+                                            type="text" id="Locality" name="Locality" size="8"></td>
+                                    <td class="border-t-2 border-gray-200 px-4 py-3"><select id="Payment" name="Payment"
+                                            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    
+                                            <option value="Mode">Mode</option>
+                                            <option value="Online">Online</option>
+                                            <option value="Offline">Cash</option>
+                                        </select></td>
+    
+                                </tr>
+                                <tr>
+                                    <td class="border-t-2 border-gray-200 px-4 py-3"><select id="Vegetable" name="Vegetable"
+                                            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    
+                                            <option value="Null">Veggie</option>
+                                            <option value="Tomato">Tomato</option>
+                                            <option value="Potato">Potato</option>
+                                            <option value="Onion">Onion</option>
+                                            <option value="Bittergourd">Bittergourd</option>
+                                            <option value="Bottle gourd">Bottle gourd</option>
+                                            <option value="Carrot">Carrot</option>
+                                            <option value="Chilli">Chilli</option>
+                                            <option value="Coriander">Coriander</option>
+                                            <option value="Lemon">Lemon</option>
+                                            <option value="Brinjal">Brinjal</option>
+                                            <option value="Lady Finder">Lady Finder</option>
+                                            <option value="Cabbage">Cabbage</option>
+                                            <option value="Cauliflower">Cauliflower</option>
+                                            <option value="Broccoli">Broccoli</option>
+                                            <option value="Ridge Gourd">Ridge Gourd</option>
+                                            <option value="Pumpkin">Pumpkin</option>
+                                            <option value="Drumstics">Drumstics</option>
+                                            <option value="Cucumber">Cucumber</option>
+                                            <option value="Radish">Radish</option>
+                                            <option value="Beetroot">Beetroot</option>
+                                            <option value="Spinach">Spinach</option>
+                                            <option value="Corn">Corn</option>
+                                            <option value="Spring Onion">Spring Onion</option>
+                                            <option value="Ginger">Ginger</option>
+                                            <option value="Gralic">Gralic</option>
+                                            <option value="Other">Other</option>
+    
+                                        </select></td>
+                                    <td class="border-t-2 border-gray-200 px-4 py-3"><input type="text" id="Availablity"
+                                            name="Availablity" size="1.5"></td>
+                                    <td class="border-t-2 border-gray-200 px-4 py-3"><input type="text" id="Price"
+                                            name="Price" size="1.5"></td>
+                                    <td class="border-t-2 border-gray-200 px-4 py-3 text-lg text-gray-900"><input
+                                            type="text" id="Locality" name="Locality" size="8"></td>
+                                    <td class="border-t-2 border-gray-200 px-4 py-3"><select id="Payment" name="Payment"
+                                            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    
+                                            <option value="Mode">Mode</option>
+                                            <option value="Online">Online</option>
+                                            <option value="Offline">Cash</option>
+                                        </select></td>
+    
+                                </tr>
+                                <tr>
+                                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"><select id="Vegetable"
+                                            name="Vegetable"
+                                            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    
+                                            <option value="Null">Veggie</option>
+                                            <option value="Tomato">Tomato</option>
+                                            <option value="Potato">Potato</option>
+                                            <option value="Onion">Onion</option>
+                                            <option value="Bittergourd">Bittergourd</option>
+                                            <option value="Bottle gourd">Bottle gourd</option>
+                                            <option value="Carrot">Carrot</option>
+                                            <option value="Chilli">Chilli</option>
+                                            <option value="Coriander">Coriander</option>
+                                            <option value="Lemon">Lemon</option>
+                                            <option value="Brinjal">Brinjal</option>
+                                            <option value="Lady Finder">Lady Finder</option>
+                                            <option value="Cabbage">Cabbage</option>
+                                            <option value="Cauliflower">Cauliflower</option>
+                                            <option value="Broccoli">Broccoli</option>
+                                            <option value="Ridge Gourd">Ridge Gourd</option>
+                                            <option value="Pumpkin">Pumpkin</option>
+                                            <option value="Drumstics">Drumstics</option>
+                                            <option value="Cucumber">Cucumber</option>
+                                            <option value="Radish">Radish</option>
+                                            <option value="Beetroot">Beetroot</option>
+                                            <option value="Spinach">Spinach</option>
+                                            <option value="Corn">Corn</option>
+                                            <option value="Spring Onion">Spring Onion</option>
+                                            <option value="Ginger">Ginger</option>
+                                            <option value="Gralic">Gralic</option>
+                                            <option value="Other">Other</option>
+    
+                                        </select></td>
+                                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"><input type="text"
+                                            id="Availablity" name="Availablity" size="1.5"></td>
+                                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3"><input type="text"
+                                            id="Price" name="Price" size="1.5"></td>
+                                    <td class="border-t-2 border-b-2 border-gray-200 px-4 py-3 text-lg text-gray-900"><input
+                                            type="text" id="Locality" name="Locality" size="8">
+                                    </td>
+                                    <td class="border-t-2 border-gray-200 px-4 py-3"><select id="Payment" name="Payment"
+                                            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    
+                                            <option value="Mode">Mode</option>
+                                            <option value="Online">Online</option>
+                                            <option value="Offline">Cash</option>
+                                        </select></td>
+    
+                                </tr>
+                                <tr>
+                                    <td class="px-4 py-3"><select id="Vegetable" name="Vegetable"
+                                            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    
+                                            <option value="Null">Veggie</option>
+                                            <option value="Tomato">Tomato</option>
+                                            <option value="Potato">Potato</option>
+                                            <option value="Onion">Onion</option>
+                                            <option value="Bittergourd">Bittergourd</option>
+                                            <option value="Bottle gourd">Bottle gourd</option>
+                                            <option value="Carrot">Carrot</option>
+                                            <option value="Chilli">Chilli</option>
+                                            <option value="Coriander">Coriander</option>
+                                            <option value="Lemon">Lemon</option>
+                                            <option value="Brinjal">Brinjal</option>
+                                            <option value="Lady Finder">Lady Finder</option>
+                                            <option value="Cabbage">Cabbage</option>
+                                            <option value="Cauliflower">Cauliflower</option>
+                                            <option value="Broccoli">Broccoli</option>
+                                            <option value="Ridge Gourd">Ridge Gourd</option>
+                                            <option value="Pumpkin">Pumpkin</option>
+                                            <option value="Drumstics">Drumstics</option>
+                                            <option value="Cucumber">Cucumber</option>
+                                            <option value="Radish">Radish</option>
+                                            <option value="Beetroot">Beetroot</option>
+                                            <option value="Spinach">Spinach</option>
+                                            <option value="Corn">Corn</option>
+                                            <option value="Spring Onion">Spring Onion</option>
+                                            <option value="Ginger">Ginger</option>
+                                            <option value="Gralic">Gralic</option>
+                                            <option value="Other">Other</option>
+    
+                                        </select></td>
+                                    <td class="px-4 py-3"><input type="text" id="Availablity" name="Availablity" size="1.5">
+                                    </td>
+                                    <td class="px-4 py-3"><input type="text" id="Price" name="Price" size="1.5"></td>
+                                    <td class="px-4 py-3 text-lg text-gray-900"><input type="text" id="Locality"
+                                            name="Locality" size="8"></td>
+                                    <td class="border-t-2 border-gray-200 px-4 py-3"><select id="Payment" name="Payment"
+                                            class="w-full bg-white rounded border border-gray-300 focus:border-green-500 focus:ring-2 focus:ring-green-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+    
+                                            <option value="Mode">Mode</option>
+                                            <option value="Online">Online</option>
+                                            <option value="Offline">Cash</option>
+                                        </select></td>
+    
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
+                
+                </div>
+                <div>
+                    <button 
+                        class="flex ml-auto text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded">Confirm</button>
+                </div>
+
+        </div>
+        </div>
+        </section>
+
+        <footer>
+            <div style="background-image: linear-gradient(to left, #5dcc41, rgba(255, 255, 255, 0.747));" class="bg-gray-100">
+                <div class="container py-4 px-5 flex flex-wrap flex-col sm:flex-row">
+                    <p class="text-gray-500 text-sm text-center sm:text-left">© 0605 farmuser —
+
+                    </p>
+
+                </div>
+            </div>
+        </footer>
+    </header>
+</body>
+
+</html>
